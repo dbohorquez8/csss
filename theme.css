@@ -1,7 +1,7 @@
 /**
-	CSSS basic slideshow theme
+	CSSS Koombea Slideshow Theme
 	
-	@author Lea Verou
+	@author David Bohórquez
 	@version 1.0
 */
 
@@ -10,7 +10,7 @@
  */
 .slide h2,
 section > header.slide > h1 {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 	font-weight: 100;
 }
  
@@ -26,7 +26,7 @@ section > header.slide > h1 {
 }
 
 html {
-	background: black url(img/rainbow-wood.jpg) bottom center;
+	background: #37291B;
 	background-size: cover;
 }
 
@@ -82,6 +82,7 @@ textarea {
 
 strong, b {
 	font-weight:bold;	
+	font-style: italic;
 }
 
 	pre strong {
@@ -90,11 +91,8 @@ strong, b {
 
 .slide {
 	padding:0 2.5% 2%;
-	background: rgba(0,0,0,.5);
-	background-clip: padding-box;
 	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
 	color: white;
-	border:30px solid transparent;
 }
 
 #indicator {
@@ -103,15 +101,20 @@ strong, b {
 	text-shadow: .03em .03em .1em white;
 }
 
+	section > header.slide > h1 {
+		background: rgba(0,0,0,.7);
+		font-weight: 400;
+	}
+
 	.slide h2 {
-		font-family: 'Helvetica Neue', Helvetica, sans-serif;
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 		font-weight: 100;
 		font-size: 1.2in;
 	}
 	
 	.slide p,
 	.slide li {
-		font-weight: bold;
+		font-weight: normal;
 		letter-spacing: -.03em;
 	}
 		
@@ -138,18 +141,18 @@ strong, b {
 		
 		.slide > ul > li:before {
 			content:'\2714';
-			color: #a0c12c;
+			color: #90C530;
 			padding-right: .2em;
 		}
 		
 			.slide li li:before {
 				content: '\279C';
-				color: #28bcbc;
+				color: #90C530;
 				padding-right: .2em;
 			}
 			
 section > header.slide {
-	background-color: rgba(0,0,0,.8);
+	
 }
 
 	section > header.slide > h1 {
@@ -206,7 +209,7 @@ section > header.slide {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 1em;
+	bottom: 0;
 	padding: .5em 1em;
 	font-size: 30%;
 	text-shadow: .05em .05em .1em black;
@@ -241,4 +244,28 @@ section > header.slide {
 
 .regex {
 	color: orange;
+}
+
+.tag {
+	color: #F92672;
+}
+
+.punctuation {
+	color: white;
+}
+
+.attr-name {
+	color: #7FE22E;
+}
+
+.attr-value {
+	color: #E6DB74;
+}
+
+/* Progress Bar */
+
+#timer {
+	background: #90C530;
+	font-size: 0;
+	height: 2px;
 }
