@@ -38,10 +38,6 @@ button {
 	padding:.2em .5em;
 }
 
-a:hover {
-	text-shadow: 0 0 .5em white, 0 0 1em white;
-}
-
 select {
 	color: black;
 }
@@ -89,6 +85,14 @@ strong, b {
 		text-shadow: 0 0 .6em white;
 	}
 
+strong.strong {
+	font-style: normal;
+}
+
+em {
+	font-style: italic;
+}
+
 .slide {
 	padding:0 2.5% 2%;
 	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
@@ -116,6 +120,14 @@ strong, b {
 	.slide li {
 		font-weight: normal;
 		letter-spacing: -.03em;
+	}
+
+	.slide a {
+		color: white;
+	}
+
+	.slide a:hover {
+		color: #90C530;
 	}
 		
 	.slide > ul {
