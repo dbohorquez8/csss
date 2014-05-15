@@ -113,7 +113,7 @@ em {
 	.slide h2 {
 		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 		font-weight: 100;
-		font-size: 1.2in;
+		font-size: 2.4em;
 	}
 	
 	.slide p,
@@ -281,3 +281,40 @@ section > header.slide {
 	font-size: 0;
 	height: 2px;
 }
+
+/* Columns */
+
+.cf:before,
+.cf:after,
+.grid:before,
+.grid:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after,
+.grid:after {
+  clear: both;
+}
+
+.grid {
+	margin-left:-10px;
+}
+
+.column {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding: 10px;
+}
+
+.one-half {
+	width: 50%;
+}
+
+/* Typhography */
+
+.text--smaller { font-size: 0.6em; }
+.text--small { font-size: 0.8em; }
+.text--large { font-size: 1.2em; }

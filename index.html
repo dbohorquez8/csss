@@ -95,9 +95,122 @@
     <section class="slide" id="outline">
       <h2>Document Outline</h2>
       <div class="delayed"><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> mark content sections</div>
+      <div class="grid delayed">
+        <div class="column one-half">
+          Document:
+          <pre class="text--smaller">
+<code lang="html">&lt;h1&gt;My fantastic site&lt;/h1&gt;
+&lt;h2&gt;About me&lt;/h2&gt;
+&lt;p&gt;Oh the stories I could tell you...&lt;/p&gt;
+&lt;h3&gt;What I do for a living&lt;/h3&gt;
+&lt;p&gt;I sell enterprise-managed ant farms.&lt;/p&gt;
+&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;p&gt;Shout my name and I will come to you.&lt;/p&gt;</code></pre>
+        </div>
+        <div class="column one-half">
+          Outline:
+          <pre class="text--smaller">
+1. My fantastic site
+  1. About me
+    1.What I do for a living
+  2. Contact
+          </pre>
+        </div>
+      </div>
       <div class="delayed">
         <a href="http://www.koombea.com/company/">Example Page</a> and its <a href="http://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fwww.koombea.com%2Fcompany%2F">Outline</a>
       </div>
+    </section>
+
+    <section class="slide" id="sectioning-elements">
+      <h2>Sectioning Elements</h2>
+      <div class="delayed">
+        <p><code>&lt;article&gt;</code> represents an independent piece of content.</p>
+        <p>Examples: a blog post, user comments, a tweet or a quote.</p>
+      </div>
+      <div class="delayed">
+        <p><code>&lt;aside&gt;</code> represents content related to the content surrounding it.</p>
+        <p>Examples: a related links section or a sidebar.</p>
+      </div>
+      <div class="delayed">
+        <p><code>&lt;nav&gt;</code> represents a section with navigation links.</p>
+        <p>Only major navigation blocks are appropriate for this element.</p>
+      </div>
+    </section>
+
+    <section class="slide" id="sections">
+      <h2>Sectioning Elements</h2>
+      <div class="delayed">
+        <code>&lt;section&gt;</code> represents a generic document or application section.
+      </div>
+      <ul>
+        <li class="delayed">It is <strong>not</strong> a <code>&lt;div&gt;</code></li>
+        <li class="delayed">Don’t use it if <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> or <code>&lt;nav&gt;</code> are more appropriate</li>
+        <li class="delayed">It has a clear theme identified by a heading</li>
+      </ul>
+    </section>
+
+    <section class="slide" id="header-and-footer">
+      <h2>Sectioning Elements</h2>
+      <div class="delayed">
+        A sectioning element may contain a <code>&lt;header&gt;</code> and/or a <code>&lt;footer&gt;</code>
+      </div>
+      <div class="delayed">
+        <code>&lt;header&gt;</code> typically contains one or more headings as well as any introductory or navigational content
+      </div>
+      <div class="delayed">
+        <p><code>&lt;footer&gt;</code> typically contains information about its section.</p>
+        <p>Examples: Author information, links to related documents or copyright data.</p>
+      </div>
+      <div class="delayed">
+        These are not limited to one per page.
+      </div>
+    </section>
+
+    <section class="slide" id="sectioning-example">
+      <h2>Sectioning Elements</h2>
+      <div class="grid delayed">
+        <div class="column one-half">
+          Document:
+          <pre class="text--smaller">
+<code lang="html">&lt;h1&gt;My fantastic site&lt;/h1&gt;
+&lt;section&gt;
+  &lt;h1&gt;About me&lt;/h1&gt;
+  &lt;p&gt;Oh the stories I could tell you...&lt;/p&gt;
+  &lt;section&gt;
+    &lt;h1&gt;What I do for a living&lt;/h1&gt;
+    &lt;p&gt;I sell ant farms.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h1&gt;Contact&lt;/h1&gt;
+  &lt;p&gt;Shout my name.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+        </div>
+        <div class="column one-half">
+          Outline:
+          <pre class="text--smaller">
+1. My fantastic site
+  1. About me
+    1.What I do for a living
+  2. Contact
+          </pre>
+          <div class="delayed">
+            <p>Further reference:</p>
+            <a href="http://html5doctor.com/element-index/">HTML5 Doctor's Element Index</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="media">
+      <h2>Media Content</h2>
+      <pre class="delayed">
+<code lang="html">&lt;img src="logo.png" alt="Koombea" /&gt; </code></pre>
+      <pre class="delayed">
+<code lang="html">&lt;audio&gt; </code></pre>
+      <pre class="delayed">
+<code lang="html">&lt;video&gt; </code></pre>
     </section>
   </section>
 </section>
