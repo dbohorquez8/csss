@@ -162,6 +162,11 @@ em {
 				color: #90C530;
 				padding-right: .2em;
 			}
+
+.delayed.displayed,
+.delayed-children > .displayed {
+	opacity: .6;
+}
 			
 section > header.slide {
 	
