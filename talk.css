@@ -32,6 +32,6 @@
 #tags h1 { font-size: 0; }
 
 .outlined {
-	background: rgba(128,128,128,.5);
+	background: rgba(128,128,128,.3);
 	padding: 0 0.2em;
 }
