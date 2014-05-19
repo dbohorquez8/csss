@@ -35,3 +35,11 @@
 	background: rgba(128,128,128,.3);
 	padding: 0 0.2em;
 }
+
+.text-input {
+	background: white;
+	border: 1px solid #CCC;
+	color: black;
+	font-size: 20px;
+	padding: 0.25em 0.5em;
+}
