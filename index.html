@@ -50,6 +50,21 @@
       <h1>TAGS</h1>
     </header>
 
+    <section class="slide" id="html-document">
+      <h2>Document Structure</h2>
+      <pre class="delayed text--small"><code lang="html">&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World!&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    Hello World!
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
     <section class="slide" id="syntax">
       <h2>Syntax</h2>
       <pre>
@@ -90,6 +105,9 @@
       <div class="delayed"><code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> are used for visual styiling</div>
       <div class="delayed"><code>&lt;br /&gt;</code> inserts a line break</div>
       <div class="delayed">Avoid using <code>&lt;br /&gt;</code> for spacing</div>
+      <div class="delayed"><code>&lt;small&gt;</code> marks small print or other side comments</div>
+      <div class="delayed"><code>&lt;blockquote&gt;</code> specifies content quoted from another source</div>
+      <div class="delayed"><code>&lt;cite&gt;</code> defines the title of a work</div>
     </section>
 
     <section class="slide" id="outline">
@@ -207,6 +225,16 @@
       <h2>Media Content</h2>
       <pre class="delayed">
 <code lang="html">&lt;img src="logo.png" alt="Koombea" /&gt; </code></pre>
+      <ul>
+        <li class="delayed">Is intended for images that should be treated as <b>content</b></li>
+        <li class="delayed">It has semantic meaning</li>
+        <li class="delayed">For decorations, use CSS</li>
+        <li class="delayed">The <code>alt</code> attribute is mandatory and should describe the content of the image</li>
+      </ul>
+    </section>
+
+    <section class="slide" id="media-audio">
+      <h2>Media Content</h2>
       <pre class="delayed">
 <code lang="html">&lt;audio controls&gt;
   &lt;source src="song.ogg" type="audio/ogg"&gt;
@@ -236,17 +264,17 @@
           <pre class="text--smaller">
 <code lang="html">&lt;h1&gt;Grocery list:&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;Cheese&lt;/li&gt;
-  &lt;li&gt;Bread&lt;/li&gt;
-  &lt;li&gt;Beef&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+  &lt;li&gt;Eggs&lt;/li&gt;
+  &lt;li&gt;Butter&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
         </div>
         <div class="column one-half">
           <pre class="text--smaller">
 Grocery list:
-  &bullet; Cheese
-  &bullet; Bread
-  &bullet; Beef
+  &bullet; Milk
+  &bullet; Eggs
+  &bullet; Butter
           </pre>
         </div>
       </div>
@@ -261,20 +289,116 @@ Grocery list:
         <p>Example:</p>
         <div class="column one-half">
           <pre class="text--smaller">
-<code lang="html">&lt;h1&gt;Grocery list:&lt;/h1&gt;
+<code lang="html">&lt;h1&gt;Recipe:&lt;/h1&gt;
 &lt;ol&gt;
-  &lt;li&gt;Cheese&lt;/li&gt;
-  &lt;li&gt;Bread&lt;/li&gt;
-  &lt;li&gt;Beef&lt;/li&gt;
+  &lt;li&gt;Mix eggs and milk in a bowl&lt;/li&gt;
+  &lt;li&gt;Heat for 10 minutes&lt;/li&gt;
+  &lt;li&gt;Add salt and pepper&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
         </div>
         <div class="column one-half">
           <pre class="text--smaller">
-Grocery list:
-  1. Cheese
-  2. Bread
-  3. Beef
+Recipe:
+  1. Mix eggs and milk in a bowl
+  2. Heat for 10 minutes
+  3. Add salt and pepper
           </pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="tables">
+      <h2>Tables</h2>
+      <div class="delayed">
+        <code>&lt;table&gt;</code> is the main table container
+      </div>
+      <div class="delayed">
+        <code>&lt;tr&gt;</code> marks a row and contains cells
+      </div>
+      <div class="delayed">
+        <code>&lt;td&gt;</code> marks a cell
+      </div>
+      <div class="delayed">
+        <code>&lt;th&gt;</code> marks heading cells
+      </div>
+    </section>
+
+    <section class="slide" id="tables-example">
+      <h2>Tables</h2>
+      <div class="grid delayed">
+        <p>Example:</p>
+        <div class="column one-half">
+          <pre class="text--smaller">
+<code lang="html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Team&lt;/th&gt;
+    &lt;th&gt;Score&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Junior&lt;/td&gt;
+    &lt;td&gt;33pts&lt;/td&gt;
+  &lt;/tr&gt;
+  ...
+&lt;/table&gt;</code></pre>
+        </div>
+        <div class="column one-half">
+          <pre class="text--smaller">
+# | Team        | Score
+--+-------------+------
+1.| Junior      | 33pts
+2.| Nacional    | 32pts
+3.| Millonarios | 30pts</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="table-sections">
+      <h2>Tables</h2>
+      <div class="delayed">
+        <code>&lt;caption&gt;</code> marks the title of the table
+      </div>
+      <div class="delayed">
+        <code>&lt;thead&gt;</code> marks the header of the table
+      </div>
+      <div class="delayed">
+        <code>&lt;tfoot&gt;</code> marks the footer of the table
+      </div>
+      <div class="delayed">
+        <code>&lt;tbody&gt;</code> is used for the table's content
+      </div>
+    </section>
+    <section class="slide" id="tables-sections-example">
+      <h2>Tables</h2>
+      <div class="grid delayed">
+        <p>Example:</p>
+        <div class="column one-half">
+          <pre class="text--smaller">
+<code lang="html">&lt;table&gt;
+  &lt;caption&gt;Tournament Rankings&lt;/caption&gt;
+  &lt;thead&gt;
+    ...
+  &lt;/thead&gt;
+  &lt;tfoot&gt;
+    ...
+  &lt;/tfoot&gt;
+  &lt;tbody&gt;
+    ...
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div class="column one-half">
+          <pre class="text--smaller">
+Tournament Rankings
+
+# | Team        | Score
+--+-------------+---------
+1.| Junior      | 33pts
+2.| Nacional    | 32pts
+3.| Millonarios | 30pts
+--+-------------+---------
+  | Next match: | May 22nd</pre>
         </div>
       </div>
     </section>
