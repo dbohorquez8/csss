@@ -96,6 +96,7 @@ em {
 .slide {
 	background: rgba(55,41,27,.7);
 	color: white;
+	height: 100%;
 	padding:0 2.5% 2%;
 	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
 }
@@ -329,9 +330,33 @@ section > header.slide {
 	width: 66.67%;
 }
 
+@media screen and (max-width: 480px) {
+	.column {
+		float: none;
+		width: auto !important;
+	}
+}
+
 /* Typhography */
 
 .text--smaller { font-size: 0.6em; }
 .text--small { font-size: 0.8em; }
 .text--large { font-size: 1.2em; }
 .text--larger { font-size: 1.4em; }
+
+blockquote {
+	background: rgba(0,0,0,0.4);
+	padding: 0.25em 0.5em;
+}
+
+blockquote:before {
+	content: '“';
+}
+
+blockquote:after {
+	content: '”';
+}
+
+.quote-author {
+	text-align: right;
+}

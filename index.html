@@ -16,7 +16,11 @@
 <header id="intro" class="slide cover">
   <h1>Understanding HTML & CSS</h1>
   <p class="subheading">An Insight for Web Designers</p>
-  <p class="attribution">By David Bohórquez</p>
+  <p class="attribution">
+    David Bohórquez
+    <br />
+    <img src="img/koombea.svg" alt="Koombea" width="20%" />
+  </p>
 </header>
 
 <section>
@@ -97,8 +101,8 @@
       <span class="outlined delayed">Inline elements will not render correctly if they contain <div class="outlined">block elements</div></span>
     </section>
 
-    <section class="slide" id="semantics">
-      <h2>Semantics</h2>
+    <section class="slide" id="text">
+      <h2>Text</h2>
       <div class="delayed"><code>&lt;p&gt;</code> defines a paragraph</div>
       <div class="delayed"><code>&lt;strong&gt;</code> marks <strong class="strong">important</strong> content</div>
       <div class="delayed"><code>&lt;em&gt;</code> gives <em>emphasis</em> to content</div>
@@ -410,7 +414,7 @@ Tournament Rankings
       </div>
       <div class="grid delayed">
         <div class="column two-thirds">
-          <pre class="text--smaller"><code lang="html" contenteditable>&lt;input type="text" placeholder="e.g. Jhon Afferson" /&gt; </code></pre>
+          <pre class="text--smaller"><code lang="html">&lt;input type="text" placeholder="e.g. Jhon Afferson" /&gt; </code></pre>
         </div>
         <div class="column one-third">
           <input type="text" class="text-input" placeholder="e.g. Jhon Afferson" />
@@ -549,6 +553,114 @@ Tournament Rankings
           </select>
         </div>
       </div>
+    </section>
+
+    <section class="slide" id="forms-other">
+      <h2>Forms</h2>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="email" placeholder="e.g. jhon@koombea.com" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="email" placeholder="e.g. jhon@koombea.com" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="url" placeholder="e.g. http://koombea.com" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="url" placeholder="e.g. http://koombea.com" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="tel" placeholder="e.g. 14083000000" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="tel" placeholder="e.g. 14083000000" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="search" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="search" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="number" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="number" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="range" max="10" step="1" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="range" max="10" step="1" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="date" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="date" class="text-input" />
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;input type="color" /&gt; </code></pre>
+        </div>
+        <div class="column one-third">
+          <input type="color" class="text-input" />
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <header class="slide" id="semantics">
+      <h1>Semantics</h1>
+    </header>
+
+    <section class="slide" id="semantics-importance">
+      <h2>Why is it important?</h2>
+      <ul>
+        <li class="delayed">Marks content according to its meaning</li>
+        <li class="delayed">Describes relations among pieces of content</li>
+        <li class="delayed">It's more readable and easier to maintain</li>
+        <li class="delayed">It's Search Engine friendly</li>
+        <li class="delayed">It's more <strong>accessible</strong></li>
+      </ul>
+    </section>
+  </section>
+
+  <section>
+    <header class="slide" id="accessibility">
+      <h1>Accessibility</h1>
+    </header>
+
+    <section class="slide" id="what-is-accessibility">
+      <h2>What is Accessibility?</h2>
+      <ul>
+        <li class="delayed">It means that people with disabilities can use the Web</li>
+        <li class="delayed">It offers <strong>equal oportunity</strong> to people with disabilities</li>
+      </ul>
+      <p class="delayed">However...</p>
+    </section>
+
+    <section class="slide" id="accessible-web">
+      <h2>Accessibility</h2>
+      <blockquote>
+        The principles of <strong>universality of access</strong> irrespective of <strong>hardware</strong> or <strong>software</strong> platform, <strong>network</strong> infrastructure, <strong>language</strong>, <strong>culture</strong>, geographical <strong>location</strong>, or physical or mental <strong>impairment</strong> are <strong>core values</strong>.
+      </blockquote>
+      <p class="quote-author">&mdash; Tim Berners-Lee</p>
     </section>
   </section>
 </section>
