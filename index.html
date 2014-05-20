@@ -405,9 +405,12 @@ Tournament Rankings
 
     <section class="slide" id="forms">
       <h2>Forms</h2>
+      <div class="delayed">
+        <pre class="text--smaller"><code lang="html">&lt;form&gt;</code></pre>
+      </div>
       <div class="grid delayed">
         <div class="column two-thirds">
-          <pre class="text--smaller"><code lang="html">&lt;form&gt; </code></pre>
+          <pre class="text--smaller"><code lang="html" contenteditable>&lt;input type="text" placeholder="e.g. Jhon Afferson" /&gt; </code></pre>
         </div>
         <div class="column one-third">
           <input type="text" class="text-input" placeholder="e.g. Jhon Afferson" />
@@ -415,18 +418,18 @@ Tournament Rankings
       </div>
       <div class="grid delayed">
         <div class="column two-thirds">
-          <pre class="text--smaller"><code lang="html">&lt;input type="text" placeholder="e.g. Jhon Afferson" /&gt; </code></pre>
+          <pre class="text--smaller"><code lang="html">&lt;input type="text" value="Jhon Afferson" /&gt; </code></pre>
         </div>
         <div class="column one-third">
-          <input type="text" class="text-input" placeholder="e.g. Jhon Afferson" />
+          <input type="text" class="text-input" value="Jhon Afferson" />
         </div>
       </div>
       <div class="grid delayed">
         <div class="column two-thirds">
-          <pre class="text--smaller"><code lang="html">&lt;textarea cols="10" rows="3"&gt;&lt;/textarea&gt; </code></pre>
+          <pre class="text--smaller"><code lang="html">&lt;textarea cols="10" rows="3"&gt;Some text&lt;/textarea&gt; </code></pre>
         </div>
         <div class="column one-third">
-          <textarea cols="10" rows="3" class="text-input"></textarea>
+          <textarea cols="10" rows="3" class="text-input">Some text</textarea>
         </div>
       </div>
       <div class="grid delayed">
@@ -434,7 +437,7 @@ Tournament Rankings
           <pre class="text--smaller"><code lang="html">&lt;input type="file" /&gt; </code></pre>
         </div>
         <div class="column one-third">
-          <input type="file" class="text-input" />
+          <input type="file" class="file-input" />
         </div>
       </div>
       <div class="grid delayed">
@@ -442,7 +445,7 @@ Tournament Rankings
           <pre class="text--smaller"><code lang="html">&lt;input type="submit" value="Send" /&gt; </code></pre>
         </div>
         <div class="column one-third">
-          <input type="submit" value="Send" />
+          <input type="submit" class="submit-input" value="Send" />
         </div>
       </div>
     </section>
@@ -453,23 +456,97 @@ Tournament Rankings
 <code lang="html">&lt;input type="checkbox" name="choose-many" id="checkbox-1" /&gt;
 &lt;label for="checkbox-1"&gt;The user can check many checkboxes&lt;/label&gt;
 &lt;input type="checkbox" name="choose-many" id="checkbox-2" /&gt;
-&lt;label for="checkbox-2"&gt;Labels are recommended for accessibility and usability&lt;/label&gt;
-&lt;input type="radio" name="choose-one" id="radio-1" /&gt;
-&lt;label for="radio-1"&gt;The user can only check one radio button&lt;/label&gt;
-&lt;input type="radio" name="choose-one" id="radio-2" /&gt;
-&lt;label for="radio-2"&gt;Use the 'for' attribute to link labels to form elements&lt;/label&gt;</code></pre>
+&lt;label for="checkbox-2"&gt;Labels are recommended for accessibility and usability&lt;/label&gt;</code></pre>
         <div class="text--smaller">
           <input type="checkbox" name="choose-many" id="checkbox-1" />
           <label for="checkbox-1">The user can check many checkboxes</label>
           <br />
           <input type="checkbox" name="choose-many" id="checkbox-2" />
           <label for="checkbox-2">Labels are mandatory for accessibility and usability</label>
-          <br />
+        </div>
+      </div>
+      <div class="delayed">
+        <pre class="text--smaller">
+<code lang="html">&lt;input type="radio" name="choose-one" id="radio-1" /&gt;
+&lt;label for="radio-1"&gt;The user can only check one radio button&lt;/label&gt;
+&lt;input type="radio" name="choose-one" id="radio-2" /&gt;
+&lt;label for="radio-2"&gt;Use the 'for' attribute to link labels to form elements&lt;/label&gt;</code></pre>
+        <div class="text--smaller">
           <input type="radio" name="choose-one" id="radio-1" />
           <label for="radio-1">The user can only check one radio button</label>
           <br />
           <input type="radio" name="choose-one" id="radio-2" />
           <label for="radio-2">Use the 'for' attribute to link labels to form elements</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="forms-selects">
+      <h2>Forms</h2>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;select&gt;
+  &lt;option&gt;Colombia&lt;/option&gt;
+  &lt;option&gt;Brasil&lt;/option&gt;
+  &lt;option&gt;Argentina&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </div>
+        <div class="column one-third">
+          <select class="select-input">
+            <option>Colombia</option>
+            <option>Brasil</option>
+            <option>Argentina</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;select multiple&gt;
+  &lt;option&gt;Colombia&lt;/option&gt;
+  &lt;option&gt;Brasil&lt;/option&gt;
+  &lt;option&gt;Argentina&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </div>
+        <div class="column one-third">
+          <select multiple class="select-input">
+            <option>Colombia</option>
+            <option>Brasil</option>
+            <option>Argentina</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+     <section class="slide" id="forms-optgroup">
+      <h2>Forms</h2>
+      <div class="grid delayed">
+        <div class="column two-thirds">
+          <pre class="text--smaller"><code lang="html">&lt;select&gt;
+  &lt;optgroup label="South America"&gt;
+    &lt;option&gt;Colombia&lt;/option&gt;
+    &lt;option&gt;Brasil&lt;/option&gt;
+    &lt;option&gt;Argentina&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="North America"&gt;
+    &lt;option&gt;Mexico&lt;/option&gt;
+    &lt;option&gt;United States&lt;/option&gt;
+    &lt;option&gt;Canada&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+        </div>
+        <div class="column one-third">
+          <select class="select-input">
+            <optgroup label="South America">
+              <option>Colombia</option>
+              <option>Brasil</option>
+              <option>Argentina</option>
+            </optgroup>
+            <optgroup label="North America">
+              <option>Mexico</option>
+              <option>United States</option>
+              <option>Canada</option>
+            </optgroup>
+          </select>
         </div>
       </div>
     </section>
