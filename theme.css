@@ -360,3 +360,13 @@ blockquote:after {
 .quote-author {
 	text-align: right;
 }
+
+.html-snippet {
+	background: white;
+	width: 100%;
+}
+
+.oasis {
+	padding: 1em;
+	text-align: center;
+}
