@@ -186,6 +186,14 @@ section > header.slide {
 		text-align: center;
 	}
 
+footer.slide h2 {
+	text-align: center;
+}
+
+.credits {
+	margin: 1em 0 0.25em;
+}
+
 .slide .emphasis {
 	padding: .4em .5em .3em;
 	margin: .3em 0;
