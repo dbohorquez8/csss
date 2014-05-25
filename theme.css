@@ -117,12 +117,6 @@ em {
 		font-weight: 100;
 		font-size: 2.4em;
 	}
-	
-	.slide p,
-	.slide li {
-		font-weight: normal;
-		letter-spacing: -.03em;
-	}
 
 	.slide a {
 		color: white;
@@ -290,6 +284,22 @@ footer.slide h2 {
 	color: #E6DB74;
 }
 
+[lang="css"] {
+	color: #AD80FD;
+}
+
+[lang="css"] .punctuation {
+	color: white;
+}
+
+.selector {
+	color: #7FE22E;
+}
+
+.property {
+	color: #48B5D5;
+}
+
 /* Progress Bar */
 
 #timer {
@@ -369,12 +379,59 @@ blockquote:after {
 	text-align: right;
 }
 
-.html-snippet {
-	background: white;
-	width: 100%;
-}
-
 .oasis {
 	padding: 1em;
 	text-align: center;
 }
+
+/* Reset for HTML Examples */
+
+.html-snippet {
+	background: white;
+	color: black;
+	font-family: serif;
+	font-size: 16px;
+	line-height: 1.4;
+	padding: 10px;
+	text-shadow: none;
+	width: 100%;
+}
+
+.html-snippet button, .html-snippet input, .html-snippet select, .html-snippet textarea { font-family: sans-serif; }
+.html-snippet * {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.html-snippet a:focus { outline: thin dotted; }
+.html-snippet a:active, .html-snippet a:hover { outline: 0; }
+.html-snippet h1, .html-snippet h2, .html-snippet h3, .html-snippet h4, .html-snippet h5, .html-snippet h6 { font-family: inherit; }
+.html-snippet h1 { font-size: 2em; margin: .67em 0; }
+.html-snippet h2 { font-size: 1.5em; margin: .83em 0; }
+.html-snippet h3 { font-size: 1.17em; margin: 1em 0; }
+.html-snippet h4 { font-size: 1em; margin: 1.33em 0; }
+.html-snippet h5 { font-size: .83em; margin: 1.67em 0; }
+.html-snippet h6 { font-size: .67em; margin: 2.33em 0; }
+.html-snippet b, .html-snippet strong { font-weight: 700; }
+.html-snippet blockquote { margin: 1em 40px; }
+.html-snippet hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+.html-snippet p, .html-snippet pre { margin: 1em 0; }
+.html-snippet code, .html-snippet kbd, .html-snippet pre, .html-snippet samp { font-family: monospace,serif; _font-family: 'courier new',monospace; font-size: 1em; }
+.html-snippet pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+.html-snippet small { font-size: 80%; }
+.html-snippet dl, .html-snippet menu, .html-snippet ol, .html-snippet ul { margin: 1em 0; }
+.html-snippet dd { margin: 0 0 0 40px; }
+.html-snippet menu, .html-snippet ol, .html-snippet ul { padding: 0 0 0 40px; }
+.html-snippet nav ul, .html-snippet nav ol { list-style: none; list-style-image: none; }
+.html-snippet svg:not(:root) { overflow: hidden; }
+.html-snippet figure { margin: 0; }
+.html-snippet form { margin: 0; }
+.html-snippet fieldset { border: 1px solid silver; margin: 0 2px; padding: .35em .625em .75em; }
+.html-snippet legend { border: 0; padding: 0; white-space: normal; *margin-left: -7px; }
+.html-snippet button, .html-snippet input, .html-snippet select, .html-snippet textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+.html-snippet button, .html-snippet input { line-height: normal; }
+.html-snippet button, .html-snippet select { text-transform: none; }
+.html-snippet textarea { overflow: auto; vertical-align: top; }
+.html-snippet table { border-collapse: collapse; border-spacing: 0; }

@@ -23,69 +23,16 @@
 	overflow: hidden;
 }
 
-#html { 
-	background: #D8D8D8 url(img/slides/html.jpg) no-repeat center; 
-	background-size: cover; 
+#css { 
+	background: url(img/slides/css.gif) no-repeat center 80%; 
 }
 
-#html h1 { top: 30%; }
+#css h1 { top: 15%; }
 
-#tags { 
-	background: #1B1D26 url(img/slides/tags.jpg) no-repeat center; 
-	background-size: contain; 
-}
-
-#tags h1 { font-size: 0; }
-
-#semantics {
-	background: url(img/slides/semantics.jpg) no-repeat center 80%;
-}
-
-#semantics h1 {
-	top: 15%;
-}
-
-#accessibility {
-	background: url(img/slides/accessibility.png) no-repeat center 80%;
-}
-
-#accessibility h1 {
-	top: 15%;
-}
-
-.outlined {
-	background: rgba(128,128,128,.3);
-	padding: 0 0.2em;
-}
-
-.text-input {
-	background: white;
-	border: 1px solid #CCC;
-	color: black;
-	font-size: 20px;
-	padding: 0.25em 0.5em;
-}
-
-.file-input {
-	background: none;
-	border: 0 none;
-	font-family: sans-serif;
-	font-size: 16px;
-	line-height: 1em;
-}
-
-.submit-input {
-	background: gray;
-	color: black;
-	font-size: 20px;
-	padding: 0.25em 0.5em;
-}
-
-.select-input {
-	border: 0 none;
-	font-size: 20px;
-}
-
-input[type="search"] {
-	border-radius: 40px;
+#rules p { 
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 60%;
 }

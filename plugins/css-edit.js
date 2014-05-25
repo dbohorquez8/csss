@@ -46,6 +46,7 @@ var self = window.CSSEdit = {
 		
 		if (/^(input|textarea)$/i.test(element.nodeName)) {
 			// If no subject specified, it will be the slide
+			
 			if(!subjects.length) {
 				// Find containing slide
 				var slide = SlideShow.getSlide(element.parentNode);
