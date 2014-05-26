@@ -36,3 +36,9 @@
 	text-align: center;
 	top: 60%;
 }
+
+.box-example {
+	background: rgba(0, 0, 255, 0.2);
+	line-height: 1;
+	text-align: justify;
+}

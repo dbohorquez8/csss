@@ -62,8 +62,7 @@
 </code></pre>
           <textarea class="js-snippet delayed">p {
   color: black;
-}
-</textarea>
+}</textarea>
         </div>
         <div class="column one-half delayed">
           <div class="html-snippet">
@@ -87,7 +86,85 @@
     <section class="slide" id="specificity">
       <h2>Specificity</h2>
       <p class="delayed">CSS gives priority to the most specific selectors</p>
-      <p><a href="http://flukeout.github.io/" target="blank">http://flukeout.github.io/</a></p>
+      <p class="delayed">From the most generic to the most specific:</p>
+      <ul>
+        <li class="delayed">Universal selector: <code lang="css">*</code></li>
+        <li class="delayed">Elements: <code lang="css">body</code></li>
+        <li class="delayed">Class: <code lang="css">.button</code></li>
+        <li class="delayed">ID: <code lang="css">#comments</code></li>
+        <li class="delayed">Inline styles: <code lang="html">&lt;p style="color: white"&gt;&lt;/p&gt; </code></li>
+        <li class="delayed">Important: <code lang="css">color: red !important;</code></li>
+      </ul>
+    </section>
+
+    <section class="slide" id="specificity-example">
+      <h2>Specificity</h2>
+      <div class="row">
+        <div class="column one-half">
+          <pre class="text--smaller"><code lang="html">&lt;h1 class="heading" id="title" 
+  style="background: black;"&gt;
+  I'm the one who &lt;em&gt;knocks&lt;/em&gt;!
+&lt;/h1&gt;
+</code></pre>
+          <textarea class="js-snippet text--smaller">* { color: white; }
+//h1 { color: lime; }
+//em { color: cyan; }
+//h1 em { color: violet; }
+//.heading { color: yellow; }
+//.heading em { color: gray; }
+//#title { color: orange; }</textarea>
+        </div>
+        <div class="column one-half">
+          <div class="html-snippet">
+            <h1 class="heading" id="title" 
+              style="background: black;">
+              I'm the one who <em>knocks</em>!
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="units">
+      <h2>Units</h2>
+      <div class="row">
+        <div class="column one-half">
+          <textarea class="js-snippet text--smaller">p {
+  font-size: 16px;
+}
+
+strong {
+  font-size: 14px;
+  //font-size: 120%;
+  //font-size: 1.4em;
+  //font-size: 2rem;
+}</textarea>
+        </div>
+        <div class="column one-half">
+          <div class="html-snippet">
+            <p>A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. <strong>I AM the danger!</strong> A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="color">
+      <h2>Color</h2>
+      <div class="row">
+        <div class="column one-half">
+          <textarea class="js-snippet text--smaller">p {
+  color: blue;
+  //color: #009900;
+  //color: rgb(255, 0, 0);
+  //color: hsl(32, 50%, 50%);
+}</textarea>
+        </div>
+        <div class="column one-half">
+          <div class="html-snippet">
+            <p class="text--larger">A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="slide" id="text-styling">
@@ -110,6 +187,31 @@
         <div class="column one-half">
           <div class="html-snippet">
             <p>A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="box-model">
+      <h2>Box Model</h2>
+      <div class="row">
+        <div class="column one-half">
+          <textarea class="js-snippet text--small">.box {
+  width: 150px;
+  height: auto;
+  border: 5px solid #06F;
+  padding: 20px;
+  margin: 20px;
+}</textarea>
+        </div>
+        <div class="column one-half">
+          <div class="html-snippet">
+            <div class="box-example box">
+              I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!
+            </div>
+            <div class="box-example box">
+              I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!
+            </div>
           </div>
         </div>
       </div>
