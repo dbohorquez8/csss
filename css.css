@@ -42,3 +42,20 @@
 	line-height: 1;
 	text-align: justify;
 }
+
+.box1, .box2, .box3 {
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+.box1 {
+	background: hsl(128, 100%, 75%);
+}
+
+.box2 {
+	background: hsl(192, 100%, 75%);
+}
+
+.box3 {
+	background: hsl(32, 100%, 75%);
+}
