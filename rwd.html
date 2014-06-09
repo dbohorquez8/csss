@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Understanding HTML & CSS - Part II</title>
+<link href="slideshow.css" rel="stylesheet" />
+<link href="theme.css" rel="stylesheet" />
+<link href="css.css" rel="stylesheet" />
+<script src="prefixfree.min.js"></script>
+
+</head>
+<body data-duration="30">
+
+<header id="intro" class="slide cover">
+  <h1>Understanding HTML & CSS - Part III</h1>
+  <p class="subheading">An Insight for Web Designers</p>
+  <p class="attribution">
+    David Bohórquez
+    <br />
+    <img src="img/koombea.svg" alt="Koombea" width="20%" />
+  </p>
+</header>
+
+<section class="slide" id="disclaimer">
+  <h2>Disclaimer</h2>
+  <ul>
+    <li class="delayed">Not an HTML or CSS training</li>
+    <li class="delayed">Insight on how websites are built</li>
+    <li class="delayed">Meant for Graphic Web Designers</li>
+  </ul>
+</section>
+
+<section>
+  <header class="slide cover" id="responsive">
+    <h1>Responsive Web Design</h1>
+  </header>
+
+  <section class="slide" id="what-is-css">
+    <h2>Introduction</h2>
+    <div class="push--bottom">
+      <p>The First Website Ever</p>
+      <p><a href="http://info.cern.ch/hypertext/WWW/TheProject.html
+  " target="_blank" class="push--bottom">http://info.cern.ch/hypertext/WWW/TheProject.html
+  </a></p>
+    </div>
+    <ul>
+      <li class="delayed">The Web has <strong>always</strong> been Responsive</li>
+      <li class="delayed">The superpower of the Web is its <strong>Ubiquity</strong></li>
+      <li class="delayed">People use mobile Web the same way they use desktop sites</li>
+      <li class="delayed">It just has to be usable</li>
+    </ul>
+  </section>
+</section>
+
+<footer class="slide" id="thanks">
+  <h2>Thank you!</h2>
+  <p class="text--small">Find these slides at <a href="http://davo.site44.com/slides/css-for-designers/">http://davo.site44.com/slides/css-for-designers/</a></p>
+  <p class="text--smaller">Made with Lea Verou's CSSS framework for presentations <a href="http://github.com/LeaVerou/CSSS">http://github.com/LeaVerou/CSSS</a></p>
+  <h3 class="text--small credits">Know more about CSS:</h3>
+  <ul class="text--small">
+    <li>Introducción a CSS <a href="http://librosweb.es/css/">http://librosweb.es/css/</a> (Spanish)</li>
+    <li>HTML Dog's CSS Tutorials <a href="http://www.htmldog.com/guides/css/">http://www.htmldog.com/guides/css/</a></li>
+    <li>W3 Schools <a href="http://www.w3schools.com/css/css_intro.asp">http://www.w3schools.com/css/css_intro.asp</a></li>
+  </ul>
+</footer>
+
+<script src="slideshow.js"></script>
+
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.js-snippet');
+for(var i=0; i<snippets.length; i++) {
+  new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.js-css-control');
+for(var i=0; i<cssControls.length; i++) {
+  new CSSControl(cssControls[i]);
+}
+</script>
+  
+</body>
+</html>
