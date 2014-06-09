@@ -298,6 +298,99 @@ strong {
         </div>
       </div>
     </section>
+
+    <section class="slide" id="grids">
+      <h2>Grids</h2>
+      <div class="text--center">
+        <img src="img/slides/grids.gif" alt="">
+      </div>
+    </section>
+
+    <section class="slide" id="grid-types">
+      <h2>Grids</h2>
+      <div class="html-snippet push--bottom">
+        <div class="grid-wrapper">
+          <div class="grid-row">
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+            <div class="col col-1">col-1<br>60px</div>
+          </div>
+          <br>
+          <div class="grid-row">
+            <div class="col col-2">col-2<br>140px</div>
+            <div class="col col-4">col-4<br>300px</div>
+            <div class="col col-6">col-6<br>460px</div>
+          </div>
+        </div>
+      </div>
+      <div class="delayed text--center">
+        <div class="html-snippet" id="responsive-grid">
+          <div class="grid-wrapper">
+            <div class="grid-row">
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+              <div class="col col-1">col-1<br>8.33%</div>
+            </div>
+            <br>
+            <div class="grid-row">
+              <div class="col col-2">col-2<br>16.67%</div>
+              <div class="col col-4">col-4<br>33.33%</div>
+              <div class="col col-6">col-6<br>50%</div>
+            </div>
+          </div>
+        </div>
+        <input type="range" min="320" max="1200" step="20" value="1200" data-style="width: {value}px;" class="js-css-control" data-subject="#responsive-grid">
+      </div>
+    </section>
+
+    <section class="slide" id="grids-issues">
+      <h2>Grids</h2>
+      <div class="text--center">
+        <img src="img/slides/responsive-grids.gif" alt="">
+      </div>
+      <div class="html-snippet delayed">
+        <div class="grid-wrapper">
+          <div class="grid-row">
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+            <div class="col col-1">one-twelfth<br>8.33%</div>
+          </div>
+          <br>
+          <div class="grid-row">
+            <div class="col col-2">one-sixth<br>16.67%</div>
+            <div class="col col-4">one-third<br>33.33%</div>
+            <div class="col col-6">one-half<br>50%</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </section>
 
@@ -326,6 +419,11 @@ var slideshow = new SlideShow();
 var snippets = document.querySelectorAll('.js-snippet');
 for(var i=0; i<snippets.length; i++) {
   new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.js-css-control');
+for(var i=0; i<cssControls.length; i++) {
+  new CSSControl(cssControls[i]);
 }
 </script>
   

@@ -59,3 +59,36 @@
 .box3 {
 	background: hsl(32, 100%, 75%);
 }
+
+.grid-wrapper {
+	background: hsl(128,100%,80%);
+	margin: -10px auto;
+	overflow: hidden;
+	padding: 10px;
+	max-width: 940px;
+}
+
+.grid-row {
+	margin-left: -20px;
+	overflow: hidden;
+}
+
+.col:first-child {
+	border-left-color: hsl(128,100%,80%);
+}
+
+.col {
+	background: hsl(200,100%,80%);
+	background-clip: padding-box;
+	box-sizing: border-box;
+	float: left;
+	font-size: 1.2em;
+	border-left: 20px solid hsl(0,100%,85%);
+	padding: 20px 0;
+	text-align: center;
+}
+
+.col-1 { width: 8.333333333333334%; }
+.col-2 { width: 16.66666667%; }
+.col-4 { width: 33.33333333%; }
+.col-6 { width: 50.0%; }

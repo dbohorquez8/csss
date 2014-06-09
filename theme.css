@@ -28,6 +28,7 @@ section > header.slide > h1 {
 html {
 	background: #37291B url(img/cover.jpg) no-repeat center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 body {
@@ -95,8 +96,11 @@ em {
 
 .slide {
 	background: rgba(55,41,27,.7);
+	background-attachment: fixed;
+	box-sizing: border-box;
 	color: white;
-	height: 100%;
+	min-height: 100%;
+	overflow: auto !important;
 	padding:0 2.5% 2%;
 	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
 }
@@ -355,12 +359,17 @@ footer.slide h2 {
 	}
 }
 
+.push--bottom {
+	margin-bottom: 10px;
+}
+
 /* Typhography */
 
 .text--smaller { font-size: 0.6em; }
 .text--small { font-size: 0.8em; }
 .text--large { font-size: 1.2em; }
 .text--larger { font-size: 1.4em; }
+.text--center { text-align: center; }
 
 blockquote {
 	background: rgba(0,0,0,0.4);
