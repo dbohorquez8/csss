@@ -1,0 +1,44 @@
+#intro {
+  padding   : 0;
+  text-align: center;
+  border    : 0;
+}
+
+#intro h1 {
+  font-size: 1.8em;
+  margin-top: 2em;
+}
+
+#intro .subheading {
+  margin-bottom: 2em;
+}
+
+#intro .attribution {
+  background: transparent;
+  text-align: center;
+  font-size: 100%;
+  font-weight: 300;
+  color: white;
+  text-shadow: none;
+  overflow: hidden;
+}
+
+#responsive { 
+  background: url(img/slides/rwd.png) no-repeat center 80%; 
+}
+
+#responsive h1 { 
+  font-size: 100px;
+  top: 15%; 
+}
+
+#content-is-king { 
+  background: black url(img/slides/content-is-king.jpg) no-repeat center 80%;
+  background-size: contain;
+}
+
+#content-is-king h2 { 
+  font-size: 100px;
+  text-align: center;
+  top: 15%; 
+}

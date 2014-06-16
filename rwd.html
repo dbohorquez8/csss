@@ -7,7 +7,7 @@
 <title>Understanding HTML & CSS - Part II</title>
 <link href="slideshow.css" rel="stylesheet" />
 <link href="theme.css" rel="stylesheet" />
-<link href="css.css" rel="stylesheet" />
+<link href="rwd.css" rel="stylesheet" />
 <script src="prefixfree.min.js"></script>
 
 </head>
@@ -23,21 +23,12 @@
   </p>
 </header>
 
-<section class="slide" id="disclaimer">
-  <h2>Disclaimer</h2>
-  <ul>
-    <li class="delayed">Not an HTML or CSS training</li>
-    <li class="delayed">Insight on how websites are built</li>
-    <li class="delayed">Meant for Graphic Web Designers</li>
-  </ul>
-</section>
-
 <section>
   <header class="slide cover" id="responsive">
     <h1>Responsive Web Design</h1>
   </header>
 
-  <section class="slide" id="what-is-css">
+  <section class="slide" id="introduction">
     <h2>Introduction</h2>
     <div class="push--bottom">
       <p>The First Website Ever</p>
@@ -51,6 +42,109 @@
       <li class="delayed">People use mobile Web the same way they use desktop sites</li>
       <li class="delayed">It just has to be usable</li>
     </ul>
+  </section>
+
+  <section class="slide" id="ubiquity">
+    <h2>Ubiquity</h2>
+    <ul>
+      <li class="delayed">"On the Go" is still true</li>
+      <li class="delayed">76% access mobile while waiting in line</li>
+      <li class="delayed">79% people using their smartphones in stores</li>
+      <li class="delayed">39% access mobile web while pooping</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="strategy">
+    <h2>Responsive Design Strategies</h2>
+    <div class="text--center">
+      <img src="img/slides/rwd-strategy.jpg">
+    </div>
+  </section>
+
+  <section class="slide" id="strategy2">
+    <h2>Responsive Design Strategies</h2>
+    <div class="row">
+      <div class="column one-half">
+        <p class="push-double--bottom">Mobile Last</p>
+        <ul>
+          <li>Graceful Degradation</li>
+          <li>Build the full experience first</li>
+          <li>Start from the most capable device</li>
+          <li>Hide/Remove non-critical elements</li>
+        </ul>
+      </div>
+      <div class="column one-half delayed">
+        <p class="push-double--bottom">Mobile First</p>
+        <ul>
+          <li>Progressive Enhancement</li>
+          <li>Build the minimal experience first</li>
+          <li>Start from the least capable device</li>
+          <li>Add new elements to enrich the minimal version</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="media-queries">
+    <h2>Media Queries</h2>
+    <pre class="delayed"><code lang="css">@media screen and (max-width:320px;) {
+  .really-big-table {
+    display: none;
+  }
+}
+</code></pre>
+  </section>
+
+  <section class="slide" id="breakpoints">
+    <h2>What are the Breakpoints?</h2>
+    <div class="text--center">
+      <img src="img/slides/not-the-web.jpg">
+    </div>
+  </section>
+
+  <section class="slide" id="the-fold">
+    <h2>The Fold Is A Lie</h2>
+    <div class="row">
+      <div class="column one-half text--right delayed">
+        <img src="img/slides/iphone4.png">
+      </div>
+      <div class="column one-half delayed">
+        <img src="img/slides/iphone5.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="not-the-web">
+    <h2>This Is <strong>NOT</strong> The Web</h2>
+    <div class="text--center">
+      <img src="img/slides/not-the-web.jpg">
+    </div>
+  </section>
+
+  <section class="slide" id="this-is-the-web">
+    <h2>This Is The Web</h2>
+    <div class="text--center">
+      <img src="img/slides/devices.jpg" height="550">
+    </div>
+  </section>
+
+  <section class="slide" id="this-will-be-the-web">
+    <h2>This Will Be The Web</h2>
+    <div class="text--center">
+      <img src="img/slides/future-web.png" height="550">
+    </div>
+  </section>
+
+  <section class="slide" id="future-friendly">
+    <h2>Future Friendly</h2>
+    <blockquote>
+      The best way to be future friendly is to be backwards compatible.
+    </blockquote>
+    <p class="quote-author">&mdash; Jeremy Keith</p>
+  </section>
+
+  <section class="slide" id="content-is-king">
+    <h2>Content Is King</h2>
   </section>
 </section>
 
