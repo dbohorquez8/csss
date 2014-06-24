@@ -361,6 +361,7 @@ footer.slide h2 {
 
 .push--bottom { margin-bottom: 10px !important; }
 .push-double--bottom { margin-bottom: 20px !important; }
+.push-quad--bottom { margin-bottom: 40px !important; }
 
 /* Typhography */
 
@@ -373,6 +374,7 @@ footer.slide h2 {
 
 blockquote {
 	background: rgba(0,0,0,0.4);
+	line-height: 1.4;
 	padding: 0.25em 0.5em;
 }
 

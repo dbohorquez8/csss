@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Understanding HTML & CSS - Part IV</title>
+<link href="slideshow.css" rel="stylesheet" />
+<link href="theme.css" rel="stylesheet" />
+<link href="awd.css" rel="stylesheet" />
+<script src="prefixfree.min.js"></script>
+
+</head>
+<body data-duration="50">
+
+<header id="intro" class="slide cover">
+  <h1>Understanding HTML & CSS - Part IV</h1>
+  <p class="subheading">An Insight for Web Designers</p>
+  <p class="attribution">
+    David Bohórquez
+    <br />
+    <img src="img/koombea.svg" alt="Koombea" width="20%" />
+  </p>
+</header>
+
+<section>
+  <header class="slide cover" id="atomic">
+    <h1>Atomic Web Design</h1>
+  </header>
+
+  <section class="slide" id="introduction">
+    <h2>Atomic?</h2>
+    <div class="row">
+      <div class="column two-thirds">
+        <ul class="push-quad--bottom">
+          <li class="delayed">Object Oriented Design</li>
+          <li class="delayed">Modules, not pages</li>
+          <li class="delayed">Content-out, not layout-in</li>
+          <li class="delayed">Promotes consistency, cohesion and collaboration</li>
+          <li class="delayed">Provides scalability and flexibility</li>
+        </ul>
+        <div class="delayed">
+          <blockquote>
+            We’re not designing pages, we’re designing systems of components.
+          </blockquote>
+          <p class="quote-author">&mdash; Stephen Hay</p>
+        </div>
+      </div>
+      <div class="column one-third">
+        <img src="img/slides/atomic.jpg" width="100%">
+      </div>
+    </div>  
+  </section>
+
+  <section class="slide" id="reference">
+    <h2>It's a Methodology</h2>
+    <div class="text--center">
+      <img src="img/slides/methodology.jpg" width="800">
+    </div>
+    <p>Brad Frost's Atomic Design:</p>
+    <p><a href="http://bradfrostweb.com/blog/post/atomic-web-design/">http://bradfrostweb.com/blog/post/atomic-web-design/</a></p>
+    <p><a href="http://vimeo.com/67476280">http://vimeo.com/67476280</a></p>
+  </section>
+
+  <section class="slide" id="patterns">
+    <h2>Patterns</h2>
+    <div class="row">
+      <div class="column one-half">
+        <ul>
+          <li class="delayed">Common UI elements are already designed</li>
+          <li class="delayed">Users know how to use them, and even expect them</li>
+          <li class="delayed">Reuse, extend, scale</li>
+          <li class="delayed">Build complex element starting from simple patterns</li>
+        </ul>
+      </div>
+      <div class="column one-half">
+        <img src="img/slides/patterns.png" width="100%">
+      </div>
+  </section>
+
+  <section class="slide" id="goals">
+    <h2>The Desired Goals</h2>
+    <ul class="push-quad--bottom">
+      <li class="delayed">Build systems designed to be modified and extended</li>
+      <li class="delayed">Generate style guides while designing/coding</li>
+      <li class="delayed">Provide a consistent system of components</li>
+      <li class="delayed">Make collaborative work and maintenance easier</li>
+    </ul> 
+    <div class="delayed">
+      <blockquote>
+        Tiny Bootstraps for every client
+      </blockquote>
+      <p class="quote-author">&mdash; Dave Rupert</p>
+    </div>
+  </section>
+
+  <section class="slide" id="atoms">
+    <h2>Atoms</h2>
+    <ul>
+      <li class="delayed">Simpliest building blocks</li>
+      <li class="delayed">Abstract</li>
+      <li class="delayed">Generally not useful by themselves</li>
+      <li class="delayed">Base/global style reference</li>
+    </ul>
+    <div class="row delayed">
+      <div class="column one-third">
+        <img src="img/slides/atoms-elements.jpg" width="100%">
+      </div>
+      <div class="column one-third">
+        <img src="img/slides/atoms-typography.png" width="100%">
+      </div>
+      <div class="column one-third">
+        <img src="img/slides/atoms-colors.png" width="100%">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="molecules">
+    <h2>Molecules</h2>
+    <ul>
+      <li class="delayed">Composed of atoms</li>
+      <li class="delayed">Have a single purpose</li>
+      <li class="delayed">Combine to create more complex systems</li>
+    </ul>
+    <div class="text--center delayed">
+      <img src="img/slides/molecules.jpg">
+    </div>
+  </section>
+
+  <section class="slide" id="organisms">
+    <h2>Organisms</h2>
+    <ul>
+      <li class="delayed">Complex molecules</li>
+      <li class="delayed">Self-contained sections with many functionalities</li>
+      <li class="delayed">Standalone, portable, reusable</li>
+    </ul>
+    <div class="text--center delayed">
+      <img src="img/slides/organisms.jpg">
+    </div>
+  </section>
+
+  <section class="slide" id="templates">
+    <h2>Templates</h2>
+    <ul>
+      <li class="delayed">Wireframes</li>
+      <li class="delayed">Page templates</li>
+      <li class="delayed">Groups of organisms</li>
+      <li class="delayed">Adds content hierarchy and purpose</li>
+      <li class="delayed">Client facing</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="pages">
+    <h2>Pages</h2>
+    <ul>
+      <li class="delayed">Specific instances or variations of a template</li>
+      <li class="delayed">Contains real content, context and meaning</li>
+      <li class="delayed">High fidelity comps</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="style-guides">
+    <h2>Style Guides</h2>
+    <ul>
+      <li class="delayed">Component inventory</li>
+      <li class="delayed">Encourages the reuse of symbols</li>
+      <li class="delayed">New components are variations or a fusion of existing components</li>
+      <li class="delayed">Promotes consistency</li>
+      <li class="delayed">Serves as reference</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="style-guides-examples">
+    <h2>Style Guides</h2>
+    <ul>
+      <li class="delayed">Salesforce (<a target="_blank" href="http://sfdc-styleguide.herokuapp.com/">http://sfdc-styleguide.herokuapp.com/</a>)</li>
+      <li class="delayed">Starbucks (<a target="_blank" href="http://www.starbucks.com/static/reference/styleguide/">http://www.starbucks.com/static/reference/styleguide/</a>)</li>
+      <li class="delayed">Next FontShop (<a target="_blank" href="http://next.fontshop.com/styleguide/globals">http://next.fontshop.com/styleguide/globals</a>)</li>
+      <li class="delayed">Bootstrap (<a target="_blank" href="http://getbootstrap.com/css/">http://getbootstrap.com/css/</a>)</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="code">
+    <h2>Designed To Be Coded</h2>
+    <div class="push--bottom text--center delayed">
+      <img src="img/slides/variables01.png" height="270">
+    </div>
+    <div class="row">
+      <div class="column one-half text--right delayed">
+        <img src="img/slides/variables02.png" height="270">
+      </div>
+      <div class="column one-half text--left delayed">
+        <img src="img/slides/variables03.png" height="270">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="code2">
+    <h2>Designed To Be Coded</h2>
+    <div class="row">
+      <div class="column one-half text--right delayed">
+        <img src="img/slides/structure.png" height="500">
+      </div>
+      <div class="column one-half text--left delayed">
+        <img src="img/slides/buttons.png" height="500">
+      </div>
+    </div>
+  </section>
+</section>
+
+<footer class="slide" id="thanks">
+  <h2>Thank you!</h2>
+  <p class="text--small">Find these slides at <a href="http://davo.site44.com/slides/responsive-web-design/">http://davo.site44.com/slides/responsive-web-design/</a></p>
+  <p class="text--smaller">Made with Lea Verou's CSSS framework for presentations <a href="http://github.com/LeaVerou/CSSS">http://github.com/LeaVerou/CSSS</a></p>
+  <p class="text--smaller">Most statistics, images and references were taken from Brad Frost's "Beyond Media Queries" talk <a href="http://bradfrostweb.com/">http://bradfrostweb.com/</a></p>
+  <h3 class="text--small credits">Learn more about Responsive Web Design:</h3>
+  <ul class="text--small">
+    <li>This is Responsive <a href="http://bradfrost.github.io/this-is-responsive/">http://bradfrost.github.io/this-is-responsive/</a></li>
+    <li>Anatomy of a Mobile-First Responsive Web Design <a href="http://bit.ly/rwdanatomy">http://bit.ly/rwdanatomy</a></li>
+    <li>Content First <a href="http://adactio.com/journal/4523/">http://adactio.com/journal/4523/</a></li>
+  </ul>
+</footer>
+
+<script src="slideshow.js"></script>
+
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.js-snippet');
+for(var i=0; i<snippets.length; i++) {
+  new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.js-css-control');
+for(var i=0; i<cssControls.length; i++) {
+  new CSSControl(cssControls[i]);
+}
+</script>
+  
+</body>
+</html>
