@@ -31,3 +31,8 @@
 #atomic h1 { 
   display: none;
 }
+
+#thanks { 
+  background: url(img/slides/the-end.jpg) no-repeat center; 
+  background-size: cover;
+}
